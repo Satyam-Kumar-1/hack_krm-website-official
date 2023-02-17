@@ -15,7 +15,8 @@ function myfnc() {
   // var result = document.getElementById("result");
   // // Returns the result of the percentage portion amount
   // return (result.textContent = p * Math.pow((1 + r/n), n*t));
-  var res=Math.round(p * Math.pow((1 + r/n), n*t));
+  // var res=Math.round(p * Math.pow((1 + r/n), n*t));
+  var res=Math.round(p*(Math.pow((1+roi/100),t)));
   document.getElementById("result").innerHTML=res;
 };
 // const form = document.querySelector('#tax-form');
